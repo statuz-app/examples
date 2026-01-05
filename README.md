@@ -8,13 +8,13 @@ Automatically open Lightroom exports in Statuz. Export photos → Statuz opens w
 
 **Perfect for:** Photographers, content creators, anyone exporting from photo/video apps
 
-[→ View AppleScript Examples](url-scheme/applescript/)
+[→ View AppleScript Examples](applescript/)
 
 ### Quick Start
 
 ```bash
 # Copy compiled script
-cp url-scheme/applescript/Lightroom-to-Statuz.scpt ~/Library/Scripts/"Folder Action Scripts"/
+cp applescript/Lightroom-to-Statuz.scpt ~/Library/Scripts/"Folder Action Scripts"/
 
 # Create export folder
 mkdir ~/Desktop/SocialExport
@@ -24,7 +24,7 @@ mkdir ~/Desktop/SocialExport
 ```
 
 **Documentation:**
-- [Complete setup guide](url-scheme/applescript/README.md)
+- [Complete setup guide](applescript/README.md)
 - [Website docs](https://statuz.app/docs/lightroom-automation)
 
 ---
