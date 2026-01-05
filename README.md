@@ -2,19 +2,19 @@
 
 Real-world automation examples and scripts for Statuz.
 
-## AppleScript - Lightroom Automation
+## Lightroom Automation using AppleScript
 
 Automatically open Lightroom exports in Statuz. Export photos → Statuz opens with all images in one post.
 
 **Perfect for:** Photographers, content creators, anyone exporting from photo/video apps
 
-[→ View AppleScript Examples](applescript/)
+[→ View AppleScript Examples](lightroom/)
 
 ### Quick Start
 
 ```bash
 # Copy compiled script
-cp applescript/Lightroom-to-Statuz.scpt ~/Library/Scripts/"Folder Action Scripts"/
+cp lightroom/Lightroom-to-Statuz.scpt ~/Library/Scripts/"Folder Action Scripts"/
 
 # Create export folder
 mkdir ~/Desktop/SocialExport
@@ -24,7 +24,7 @@ mkdir ~/Desktop/SocialExport
 ```
 
 **Documentation:**
-- [Complete setup guide](applescript/README.md)
+- [Complete setup guide](lightroom/README.md)
 - [Website docs](https://statuz.app/docs/lightroom-automation)
 
 ---

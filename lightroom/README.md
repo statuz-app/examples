@@ -1,4 +1,4 @@
-# Lightroom to Statuz - AppleScript Automation
+# AppleScript Automation - Lightroom to Statuz
 
 Automatically open Lightroom exports in Statuz. Export photos → files land in folder → Statuz opens with all photos in one post.
 
@@ -125,10 +125,6 @@ Enable if needed:
 ```bash
 osascript -e 'tell application "System Events" to set folder actions enabled to true'
 ```
-
-### Permission errors
-
-System Settings → Privacy & Security → Automation → Allow script to control Statuz
 
 ### Script not listed in Folder Actions Setup
 
