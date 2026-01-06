@@ -9,33 +9,45 @@ Automatically open Lightroom exports in Statuz. Export photos → files land in 
 
 ## Quick Setup
 
-1. **Create the Folder Action Scripts if it doesn't exist:**
+### Step 1: Get the Script
+
+**Option A: Download directly**
+1. Download [`Lightroom-to-Statuz.scpt`](https://github.com/statuz-app/examples/raw/main/lightroom/Lightroom-to-Statuz.scpt)
+2. Move it to the Folder Action Scripts folder:
    ```bash
    mkdir -p ~/Library/Scripts/"Folder Action Scripts"
+   mv ~/Downloads/Lightroom-to-Statuz.scpt ~/Library/Scripts/"Folder Action Scripts"/
    ```
 
-2. **Copy the compiled script:**
-   ```bash
-   cp Lightroom-to-Statuz.scpt ~/Library/Scripts/"Folder Action Scripts"/
-   ```
+**Option B: Clone the repository**
+```bash
+git clone https://github.com/statuz-app/examples.git
+cd examples/lightroom
+mkdir -p ~/Library/Scripts/"Folder Action Scripts"
+cp Lightroom-to-Statuz.scpt ~/Library/Scripts/"Folder Action Scripts"/
+```
 
-3. **Create the export folder:**
-   ```bash
-   mkdir ~/Desktop/SocialExport
-   ```
+### Step 2: Create Export Folder
 
-4. **Attach folder action:**
-   - Right-click `~/Desktop/SocialExport`
-   - Folder Actions Setup
-   - Check ✅ "Enable Folder Actions"
-   - Click + under "Script"
-   - Select "Lightroom-to-Statuz.scpt"
+```bash
+mkdir ~/Desktop/SocialExport
+```
 
-5. **Test:**
-   ```bash
-   cp ~/Pictures/test.jpg ~/Desktop/SocialExport/
-   ```
-   Statuz should open automatically with the image.
+### Step 3: Attach Folder Action
+
+1. Right-click `~/Desktop/SocialExport`
+2. Select **Folder Actions Setup**
+3. Check ✅ **"Enable Folder Actions"**
+4. Click **+** under "Script"
+5. Select **"Lightroom-to-Statuz.scpt"**
+
+### Step 4: Test
+
+```bash
+cp ~/Pictures/test.jpg ~/Desktop/SocialExport/
+```
+
+Statuz should open automatically with the image.
 
 ## Lightroom Usage
 
