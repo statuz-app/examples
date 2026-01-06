@@ -1,4 +1,4 @@
--- Lightroom to Statuz: Batch Import
+-- Lightroom to Statuz: Batch Import (Dev Version)
 
 -- Setup:
 -- 1. Save to ~/Library/Scripts/Folder Action Scripts/
@@ -47,7 +47,7 @@ on adding folder items to this_folder after receiving added_items
 		
 		-- Open Statuz with all images in one post
 		tell application "System Events"
-			open location "statuz://compose?media=" & mediaParam
+			open location "statuz-dev://compose?media=" & mediaParam
 		end tell
 	end try
 end adding folder items to
