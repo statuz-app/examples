@@ -1,9 +1,8 @@
 -- Lightroom to Statuz: Batch Import
--- Save this as a Folder Action Script to automatically open Lightroom exports in Statuz
--- 
+
 -- Setup:
 -- 1. Save to ~/Library/Scripts/Folder Action Scripts/
--- 2. Right-click your export folder â†’ Services â†’ Folder Actions Setup
+-- 2. Right-click your export folder -> Folder Actions Setup
 -- 3. Attach this script to the folder
 
 -- Folder action handler - called automatically when files are added
@@ -16,10 +15,10 @@ on adding folder items to this_folder after receiving added_items
 		repeat with fileAlias in added_items
 			set posixPath to POSIX path of fileAlias
 			-- Only include supported formats
-			if posixPath ends with ".jpg" or posixPath ends with ".jpeg" or Â¬
-				posixPath ends with ".png" or posixPath ends with ".gif" or Â¬
-				posixPath ends with ".heic" or posixPath ends with ".webp" or Â¬
-				posixPath ends with ".mp4" or posixPath ends with ".mov" or Â¬
+			if posixPath ends with ".jpg" or posixPath ends with ".jpeg" or Â
+				posixPath ends with ".png" or posixPath ends with ".gif" or Â
+				posixPath ends with ".heic" or posixPath ends with ".webp" or Â
+				posixPath ends with ".mp4" or posixPath ends with ".mov" or Â
 				posixPath ends with ".m4v" then
 				set end of mediaPaths to "file://" & posixPath
 			end if
@@ -44,4 +43,3 @@ on adding folder items to this_folder after receiving added_items
 		end tell
 	end try
 end adding folder items to
-

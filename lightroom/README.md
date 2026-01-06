@@ -9,36 +9,40 @@ Automatically open Lightroom exports in Statuz. Export photos → files land in 
 
 ## Quick Setup
 
-1. **Copy the compiled script:**
+1. **Create the Folder Action Scripts if it doesn't exist:**
+   ```bash
+   mkdir -p ~/Library/Scripts/"Folder Action Scripts"
+   ```
+
+2. **Copy the compiled script:**
    ```bash
    cp Lightroom-to-Statuz.scpt ~/Library/Scripts/"Folder Action Scripts"/
    ```
 
-2. **Create export folder:**
+3. **Create the export folder:**
    ```bash
    mkdir ~/Desktop/SocialExport
    ```
 
-3. **Attach folder action:**
+4. **Attach folder action:**
    - Right-click `~/Desktop/SocialExport`
    - Folder Actions Setup
    - Check ✅ "Enable Folder Actions"
    - Click + under "Script"
    - Select "Lightroom-to-Statuz.scpt"
 
-4. **Test:**
+5. **Test:**
    ```bash
    cp ~/Pictures/test.jpg ~/Desktop/SocialExport/
    ```
    Statuz should open automatically with the image.
 
-## Lightroom Configuration
+## Lightroom Usage
 
-1. **File → Export** (Cmd+Shift+E)
-2. Export To: **Specific folder** → Choose `~/Desktop/SocialExport`
-3. Format: **JPEG**, Quality: **80**
-4. Resize to: **2048 x 2048 pixels**
-5. Save preset as "Post to Social"
+1. **Select multiple files with shift pressed → Right-click → Export X Files > Export**
+2. Tweak your preset, include watermark, etc.
+3. Click **Export**
+4. Select the export folder you created earlier
 
 Now export → Statuz opens automatically!
 
@@ -132,6 +136,10 @@ Make sure it's saved to the correct location:
 ```bash
 ls ~/Library/Scripts/"Folder Action Scripts"/
 ```
+
+### Did all that and still nothing?
+
+The folder might be cached in a wrong state. Try deataching the script and folder action in Folder Actions Setup and then deleting the folder. Then try the setup again. Or simply try with a new folder to validate this is not a cache issue. If the issue persists, please open an issue on the [GitHub repository](https://github.com/statuz-app/examples/issues).
 
 ## More Info
 
